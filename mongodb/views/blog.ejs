@@ -12,22 +12,25 @@
 </head>
 
 <body>
-    <h2>All Blogs here</h2>
-    <div class="blogs">
-        <% data.forEach(item=> { %>
-            <div class="blog">
-                <h1>
-                    <%= item.title %>
-                </h1>
-                <p>
-                    <%= item.snippet %>
-                </p>
-                <p>
-                    <%= item.body %>
-                </p>
-            </div>
-            <% }) %>
-    </div>
+    <%- include('nav'); -%>
+        <h2>All Blogs here</h2>
+        <div class="blogs">
+            <% data.forEach(item=> { %>
+                <a class="blogLink" href="/blogs/<%= item._id %>">
+                    <div class="blog">
+                        <h1>
+                            <%= item.title %>
+                        </h1>
+                        <p>
+                            <%= item.snippet %>
+                        </p>
+                        <p>
+                            <%= item.body %>
+                        </p>
+                    </div>
+                </a>
+                <% }) %>
+        </div>
 </body>
 
 </html>

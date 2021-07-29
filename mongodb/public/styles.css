@@ -1,6 +1,10 @@
 body{
     background-color: #ddd;
 }
+a.blogLink{
+    text-decoration: none;
+    color: black;
+}
 .blogs{
     display: flex;
     gap: 10px;
@@ -15,4 +19,26 @@ body{
     display: flex;
     justify-content: center;
     justify-content: center;
+}
+.form-body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-item{
+    margin-bottom: 20px;
+   
+}
+.form-item > input{
+    height: 25px;
+    width: 250px;
+}
+button{
+    height: 25px;
+}
+.delete-blog{
+    font-size: 20px;
+    color: rgb(245, 29, 29);
+    cursor: pointer;
 }
